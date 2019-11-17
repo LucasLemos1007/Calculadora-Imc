@@ -1,0 +1,17 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Saude+ Calculadora Imc",
+  "short_name": "Saude+ Calculadora Imc",
+  "version": "io.cordova.hellocordova",
+  "description": "Calculadora Imc",
+  "author": "Lucas de Lima Lemos",
+  "icons": [
+    {
+      "src": "./www/img/imc.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    }
+  ],
+  "start_url": "index.html"
+}

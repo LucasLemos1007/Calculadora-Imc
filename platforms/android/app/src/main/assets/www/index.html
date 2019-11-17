@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>Saude+</h2>
+    </div>
+    <div class="container">
+        <label for="altura" class="labelUi">Altura: </label>
+        <input type="number" name="altura" class="inputUi" id="altura" placeholder="ex: 177 cm">
+
+        <label for="peso" class="labelUi">Peso: </label>
+        <input type="number" name="peso" class="inputUi" id="peso" placeholder="ex: 65 kg">
+
+        <button class="imcBtn">Calcular</button>
+
+        <div class="situations">
+            <div class="col">
+                <span class="magreza">Magreza: < 18,5 </span> <span class="normal">Normal: 18,5 - 24,9</span>
+                <span class="sobrepeso">Sobrepeso: 25,0 - 29,9</span>
+                <span class="obesidade">Obesidade: 30,0 - 39,9 </span>
+                <span class="obesidadeGrave">Obesidade Grave: > 40,0</span>
+            </div>
+            <div class="col">
+                <div class="progressBar">
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+            <div class="col-1">
+                <label for="nivel" class="labelImc">Nivel IMC: </label>
+                <input type="text" name="nivel" class="inputVls" id="nivel" placeholder="Seu resultado...">
+            </div>
+            <div class="col-1">
+                    <label for="valor" class="labelImc">Valor IMC: </label>
+                    <input type="text" name="valor" class="inputVls" id="valorImc" placeholder="Valor Aproximado...">
+            </div>
+        </div>
+        <div class="advertencias">
+            <h1 class="title"></h1>
+            <p class="mainMessage"></p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
